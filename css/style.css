@@ -1,0 +1,124 @@
+/*variables*/
+@font-face {
+  font-family: 'texta';
+  src: url("../fonts/texta/texta-regular/texta-regular.woff2") format("woff2"), url("../fonts/texta/texta-regular/texta-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'texta';
+  src: url("../fonts/texta/Texta-bold/texta-bold.woff2") format("woff2"), url("../fonts/texta/Texta-bold/texta-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'texta';
+  src: url("../fonts/texta/texta-light/texta-light.woff2") format("woff2"), url("../fonts/texta/texta-light/texta-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'texta';
+  src: url("../fonts/texta/texta-book/texta-book.woff2") format("woff2"), url("../fonts/texta/texta-book/texta-book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("../fonts/ProximaNova/proximanova-bold/proximanova-bold.woff2") format("woff2"), url("../fonts/ProximaNova/proximanova-bold/proximanova-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+.top_header {
+  padding: 30px 0;
+  background: url("../img/header-bg.jpg") no-repeat center/cover; }
+  .top_header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .top_header .container .logo {
+      display: flex;
+      align-items: center; }
+      .top_header .container .logo span {
+        font-size: 11px;
+        text-transform: uppercase; }
+      .top_header .container .logo a {
+        position: relative;
+        margin-right: 65px; }
+        .top_header .container .logo a:after {
+          content: '';
+          width: 1px;
+          height: 18px;
+          background-color: #f28724;
+          position: absolute;
+          top: 20px;
+          right: -35px; }
+    .top_header .container .header_links a {
+      color: #cacaca;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 400;
+      margin-right: 25px;
+      transition: .4s ease-out; }
+      .top_header .container .header_links a:hover {
+        text-decoration: none;
+        transition: .4s ease-out; }
+    .top_header .container .phone_number {
+      display: flex;
+      align-items: center; }
+      .top_header .container .phone_number span {
+        font-weight: bold;
+        font-size: 22px;
+        border-bottom: 1px dotted #7f7f7f;
+        margin-left: 13px; }
+
+.menu {
+  background-color: #fff;
+  padding: 20px 0; }
+  .menu .nav_menu {
+    display: flex;
+    justify-content: space-between; }
+    .menu .nav_menu li {
+      position: relative;
+      list-style: none; }
+      .menu .nav_menu li a {
+        color: #393939;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: .4s ease-out; }
+      .menu .nav_menu li:after {
+        content: '';
+        width: 1px;
+        height: 7px;
+        position: absolute;
+        background-color: #bebebe;
+        right: -40px;
+        top: 30%; }
+      .menu .nav_menu li:last-child:after {
+        display: none; }
+      .menu .nav_menu li:hover a {
+        text-decoration: none;
+        color: #f28724;
+        transition: .4s ease-out; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+body {
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: texta, sans-serif;
+  color: #fff;
+  font-size: 16px; }
+  body h1 {
+    font-size: 60px; }
+
+.container {
+  margin: 0 auto;
+  max-width: 96%;
+  width: 1140px; }
+
+/*# sourceMappingURL=style.css.map */
