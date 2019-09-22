@@ -41,20 +41,43 @@
         margin-left: 13px;
       }
     }
+    .account {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
     .cart {
       margin-top: 9px;
       padding: 10px 15px;
-      border: 1px solid $col_orange;
+      border: 1px solid $col_light-orange;
       display: flex;
       align-items: center;
+      border-radius: 3px;
       a {
         display: flex;
         align-items: center;
         font-size: 14px;
-        color: $col_orange;
+        color: $col_light-orange;
         font-weight: bold;
         text-decoration: none;
         font-family: texta, sans-serif;
+        position: relative;
+        img {
+          margin-right: 17px;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 3px;
+          right: -20px;
+          height: 11px;
+          width: 1px;
+          background-color: $col_light-orange;
+        }
+      }
+      span {
+        color: $col_light-orange;
+        margin-left: 41px;
       }
     }
   }
