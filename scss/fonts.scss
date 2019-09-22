@@ -35,5 +35,13 @@
   url('../fonts/ProximaNova/proximanova-bold/proximanova-bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/ProximaNova/proximanove-light/proximanova-light.woff2') format('woff2'),
+  url('../fonts/ProximaNova/proximanove-light/proximanova-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 
 }
