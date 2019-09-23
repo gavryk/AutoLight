@@ -1,0 +1,58 @@
+@media (max-width: 992px) {
+  .top_header {
+    .container {
+      .header_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+      .phone_number {
+        span {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .menu {
+    .nav_menu {
+      justify-content: space-evenly;
+      li {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .selectric-wrapper {
+    .selectric {
+      width: 140px;
+    }
+  }
+  #best_selling {
+    .products_store {
+      .item {
+        .add_item {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #best_selling {
+    .products_store {
+      justify-content: space-evenly;
+      .item {
+        width: 40%;
+        .add_item {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

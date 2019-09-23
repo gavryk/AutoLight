@@ -1,7 +1,8 @@
 #world_leading {
   text-align: center;
-  padding-top: 55px;
+  padding: 55px 0 66px 0;
   background-color: #f6f6f6;
+  border-bottom: 1px solid #e4e4e4;
   h2 {
     color: #000;
     text-transform: uppercase;
@@ -21,6 +22,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    img {
+      max-width: 100%;
+    }
     a {
       display: flex;
       align-items: center;

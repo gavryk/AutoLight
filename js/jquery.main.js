@@ -14,6 +14,19 @@ $(function() {
 
     $(function() {
         $('select').selectric();
+        minHeight: 320;
+    });
+
+    $(".tabs_caption").on("click", "li", function() {
+        $(this)
+            .addClass("caption_active")
+            .siblings()
+            .removeClass("caption_active")
+            .closest(".tabs")
+            .find(".tabs_content")
+            .removeClass("content_active")
+            .eq($(this).index())
+            .addClass("content_active");
     });
 });
 
