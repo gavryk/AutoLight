@@ -1,0 +1,88 @@
+#best_selling {
+  padding: 26px 0 40px 0;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #e4e4e4;
+  h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  span {
+    color: #898989;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  .products_store {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      margin-bottom: 42px;
+      width: 23%;
+      cursor: pointer;
+      .photo {
+        width: 100%;
+        height: 270px;
+        border: 1px solid #ebebeb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        transition: .4s ease-out;
+        &:hover {
+          border: 1px solid #ffd3aa;
+          transition: .4s ease-out;
+        }
+        img {
+          width: 200px;
+        }
+      }
+      .name {
+        font-weight: 700;
+        color: #000;
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
+      .add_item {
+        display: flex;
+        button {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #fff;
+          padding: 10px;
+          border: 1px solid #d37117;
+          background-color: $col_orange;
+          border-radius: 2px;
+          transition: .4s ease-out;
+          cursor: pointer;
+          &:hover {
+            background-color: $col_light-orange;
+            transition: .4s ease-out;
+          }
+        }
+        p {
+          color: #000;
+          font-weight: 700;
+          font-size: 22px;
+          display: flex;
+          margin-left: 13px;
+          span {
+            color: #fb9292;
+            text-decoration: line-through;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
+}

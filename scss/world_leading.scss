@@ -1,0 +1,41 @@
+#world_leading {
+  text-align: center;
+  padding-top: 55px;
+  background-color: #f6f6f6;
+  h2 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2px;
+  }
+  span {
+    font-weight: 300;
+    color: #898989;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .logo {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      width: 24%;
+      border: 1px solid #ebebeb;
+      margin-top: 18px;
+      transition: .2s ease-out;
+      background-color: #fff;
+      &:hover {
+        border: 1px solid #ffd3aa;
+        box-shadow: 0 0 5px 1px #ffd3aa;
+        transition: .2s ease-out;
+      }
+    }
+  }
+}

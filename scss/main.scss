@@ -2,6 +2,11 @@
 @import "fonts";
 @import "header";
 @import "banner";
+@import "find_light";
+@import "best_selling";
+@import "about";
+@import "world_leading";
+@import "auto_list";
 @import "footer";
 @import "mobile";
 
@@ -37,6 +42,10 @@ body {
     &:hover {
       text-decoration: none;
       transition: .2s ease-out;
+    }
+    i {
+      margin-left: 12px;
+      font-size: 12px;
     }
   }
 }

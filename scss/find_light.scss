@@ -1,0 +1,86 @@
+#find_light {
+  background-color: #f6f6f6;
+  padding-bottom: 26px;
+  .search_light {
+    //padding: 25px 23px;
+    position: relative;
+    top: -20px;
+    width: 870px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px -10px #c3c3c3;;
+    background-color: #f8f8f8;
+    h3 {
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 25px 0 0 27px;
+    }
+    .search-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 17px 23px 25px 22px;
+      button {
+        display: flex;
+        padding: 7px 15px;
+        background-color: $col_orange;
+        border: 1px solid #d37117;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+    }
+  }
+  .benefits {
+    display: flex;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    justify-content: space-between;
+    div {
+      display: flex;
+      align-items: center;
+      span {
+        letter-spacing: 1px;
+      }
+      //margin-right: 65px;
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+  .shop_by {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    .product, .brand {
+      width: 46%;
+      h2 {
+        font-family: proxima_nova, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      a {
+        display: inline-block;
+        padding: 15px;
+        border: 1px solid #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+    }
+    .product {
+      padding: 55px 0 60px 32px;
+      background: url('../img/product_bg.jpg') no-repeat center / cover;
+    }
+    .brand {
+      padding: 55px 0 60px 32px;
+      background: url('../img/brand_bg.jpg')no-repeat center / cover;
+    }
+  }
+}

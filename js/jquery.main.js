@@ -11,5 +11,9 @@ $(function() {
             clickable: true,
         },
     });
+
+    $(function() {
+        $('select').selectric();
+    });
 });
 
