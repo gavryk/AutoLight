@@ -43,5 +43,29 @@
   url('../fonts/ProximaNova/proximanove-light/proximanova-light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/ProximaNova/proximanove-regular/proxima_nova-regular.woff2') format('woff2'),
+  url('../fonts/ProximaNova/proximanove-regular/proxima_nova-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSansBold/ptsansbold.woff2') format('woff2'),
+  url('../fonts/PTSansBold/ptsansbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSansRegular/ptsans-regular.woff2') format('woff2'),
+  url('../fonts/PTSansRegular/ptsans-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 
 }

@@ -1,5 +1,7 @@
 @import "variables";
 @import "fonts";
+@import "mobile";
+/*              main page  style            */
 @import "header";
 @import "banner";
 @import "find_light";
@@ -8,7 +10,9 @@
 @import "world_leading";
 @import "auto_list";
 @import "footer";
-@import "mobile";
+/*              posts page  style               */
+@import "posts_header";
+@import "posts_slider";
 
 * {
   margin: 0;

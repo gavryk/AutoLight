@@ -1,0 +1,93 @@
+.page_header {
+  width: 100%;
+  padding: 24px 0;
+  background-color: #292724;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .search-panel {
+      position: relative;
+      width: 290px;
+      label {
+        width: 100%;
+        input {
+          border: none;
+          padding: 8px 0 9px 17px;
+          background-color: #3f3f3f;
+          width: 100%;
+          border-radius: 15px;
+        }
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: -15px;
+        outline: none;
+        height: 100%;
+        padding: 5px 10px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+      }
+    }
+    .number_phone {
+      font-size: 20px;
+      font-family: PTSans, sans-serif;
+      font-weight: 700;
+    }
+    .view_shop {
+      display: flex;
+      text-decoration: none;
+      font-family: PTSans, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: $col_light-orange;
+      border: 1px solid $col_light-orange;
+      padding: 10px 25px 10px 20px;
+      img {
+        margin-right: 14px;
+      }
+    }
+  }
+}
+.post_menu {
+  background-color: #f3f3f3;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .post_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    list-style: none;
+    width: 70%;
+    a {
+      font-family: PTSans, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: #000;
+      transition: .4s ease-out;
+      &:hover {
+        color: $col_orange;
+        transition: .4s ease-out;
+      }
+    }
+  }
+  .rss {
+    font-family: PTSans, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #8e8e8e;
+    text-decoration: none;
+    img {
+      margin-left: 15px;
+    }
+  }
+}
