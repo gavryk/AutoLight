@@ -18,6 +18,14 @@ $(function() {
         })
     });
 
+    $('.cart a').on('mouseenter', function() {
+       $('.cart').toggleClass('cart_hover');
+       $(this).on('mouseleave', function() {
+           $('.cart').removeClass('cart_hover');
+        });
+    });
+
+
     $(function() {
         $('select').selectric();
     });

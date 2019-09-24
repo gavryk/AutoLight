@@ -73,7 +73,8 @@
       border: 1px solid #ffa148;
       display: flex;
       align-items: center;
-      border-radius: 3px; }
+      border-radius: 3px;
+      transition: .2s ease-out; }
       .top_header .container .cart a {
         display: flex;
         align-items: center;
@@ -96,6 +97,9 @@
       .top_header .container .cart span {
         color: #ffa148;
         margin-left: 41px; }
+    .top_header .container .cart_hover {
+      box-shadow: 0 0 5px 2px #f28724;
+      transition: .2s ease-out; }
 
 .menu {
   background-color: #fff;
@@ -485,7 +489,7 @@ footer {
   padding: 87px 0 64px 0; }
   footer .footer_logo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     background-color: #dbdbdb;

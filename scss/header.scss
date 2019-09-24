@@ -53,6 +53,7 @@
       display: flex;
       align-items: center;
       border-radius: 3px;
+      transition: .2s ease-out;
       a {
         display: flex;
         align-items: center;
@@ -79,6 +80,10 @@
         color: $col_light-orange;
         margin-left: 41px;
       }
+    }
+    .cart_hover {
+      box-shadow: 0 0 5px 2px $col_orange;
+      transition: .2s ease-out;
     }
   }
 }
