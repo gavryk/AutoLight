@@ -16,6 +16,7 @@
       font-weight: 400;
       text-transform: uppercase;
       padding: 25px 0 0 27px;
+      letter-spacing: 1px;
     }
     .search-wrapper {
       display: flex;
@@ -36,7 +37,7 @@
     margin-top: 25px;
     font-size: 13px;
     color: #000;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     justify-content: space-between;
     div {
@@ -73,14 +74,19 @@
         color: #fff;
         font-weight: 700;
         margin-top: 24px;
+        transition: .4s ease-out;
+        &:hover {
+          box-shadow: 0 0 5px 1px #ccc;
+          transition: .4s ease-out;
+        }
       }
     }
     .product {
-      padding: 55px 0 60px 32px;
+      padding: 55px 20px 60px 32px;
       background: url('../img/product_bg.jpg') no-repeat center / cover;
     }
     .brand {
-      padding: 55px 0 60px 32px;
+      padding: 55px 20px 60px 32px;
       background: url('../img/brand_bg.jpg')no-repeat center / cover;
     }
   }

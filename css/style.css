@@ -176,7 +176,11 @@
         text-decoration: none;
         background-color: #f28724;
         padding: 15px 30px;
-        font-size: 16px; }
+        font-size: 16px;
+        transition: .4s ease-out; }
+        #banner .container .main_title a:hover {
+          background-color: #ffa148;
+          transition: .4s ease-out; }
 
 #find_light {
   background-color: #f6f6f6;
@@ -194,7 +198,8 @@
       font-size: 18px;
       font-weight: 400;
       text-transform: uppercase;
-      padding: 25px 0 0 27px; }
+      padding: 25px 0 0 27px;
+      letter-spacing: 1px; }
     #find_light .search_light .search-wrapper {
       display: flex;
       justify-content: space-between;
@@ -211,7 +216,7 @@
     margin-top: 25px;
     font-size: 13px;
     color: #000;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     justify-content: space-between; }
     #find_light .benefits div {
@@ -241,12 +246,16 @@
         font-size: 16px;
         color: #fff;
         font-weight: 700;
-        margin-top: 24px; }
+        margin-top: 24px;
+        transition: .4s ease-out; }
+        #find_light .shop_by .product a:hover, #find_light .shop_by .brand a:hover {
+          box-shadow: 0 0 5px 1px #ccc;
+          transition: .4s ease-out; }
     #find_light .shop_by .product {
-      padding: 55px 0 60px 32px;
+      padding: 55px 20px 60px 32px;
       background: url("../img/product_bg.jpg") no-repeat center/cover; }
     #find_light .shop_by .brand {
-      padding: 55px 0 60px 32px;
+      padding: 55px 20px 60px 32px;
       background: url("../img/brand_bg.jpg") no-repeat center/cover; }
 
 #best_selling {
@@ -256,13 +265,16 @@
   border-bottom: 1px solid #e4e4e4; }
   #best_selling h2 {
     color: #000;
+    letter-spacing: 1px;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase; }
   #best_selling span {
+    letter-spacing: 1px;
     color: #898989;
     text-transform: uppercase;
-    font-size: 13px; }
+    font-size: 13px;
+    font-weight: 300; }
   #best_selling .products_store {
     margin-top: 45px;
     display: flex;
@@ -275,7 +287,7 @@
       justify-content: space-between;
       text-align: left;
       margin-bottom: 42px;
-      width: 23%;
+      width: 24%;
       cursor: pointer; }
       #best_selling .products_store .item .photo {
         width: 100%;
@@ -298,11 +310,13 @@
         padding-top: 20px;
         padding-bottom: 15px; }
       #best_selling .products_store .item .add_item {
-        display: flex; }
+        display: flex;
+        align-items: center; }
         #best_selling .products_store .item .add_item button {
           text-transform: uppercase;
           text-decoration: none;
           color: #fff;
+          font-weight: 700;
           padding: 10px;
           border: 1px solid #d37117;
           background-color: #f28724;
@@ -368,7 +382,11 @@
       text-decoration: none;
       font-size: 16px;
       font-weight: 700;
-      border-radius: 2px; }
+      border-radius: 2px;
+      transition: .4s ease-out; }
+      #about .text_wrapper a:hover {
+        box-shadow: 0 0 5px 1px #ccc;
+        transition: .4s ease-out; }
 
 #world_leading {
   text-align: center;
@@ -411,7 +429,7 @@
 
 #auto_list {
   color: #000;
-  padding: 50px 0 80px 0; }
+  padding: 50px 30px 80px 0; }
   #auto_list .tabs .tabs_caption {
     display: flex;
     flex-wrap: wrap;
@@ -448,8 +466,12 @@
     display: none;
     font-size: 18px;
     color: #787878; }
-    #auto_list .tabs .tabs_content span {
+    #auto_list .tabs .tabs_content a {
+      text-decoration: none;
+      color: #787878;
       margin-bottom: 20px; }
+      #auto_list .tabs .tabs_content a:hover {
+        color: #f28724; }
   #auto_list .tabs .content_active {
     display: flex;
     flex-direction: column;
@@ -462,9 +484,20 @@ footer {
   background-color: #f6f6f6;
   padding: 87px 0 64px 0; }
   footer .footer_logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #dbdbdb;
     padding: 10px 0;
     border-bottom: 4px solid #343434; }
+    footer .footer_logo .cite_logo img {
+      margin-right: 40px; }
+    footer .footer_logo .payment_logo {
+      display: flex;
+      align-items: center; }
+      footer .footer_logo .payment_logo img:last-child {
+        margin-left: 15px; }
   footer .social_wrapper {
     display: flex;
     justify-content: space-around; }
@@ -478,9 +511,10 @@ footer {
       footer .social_wrapper .subscribe h4 {
         font-size: 22px; }
       footer .social_wrapper .subscribe input {
+        border: none;
         width: 100%;
         height: 30px;
-        border-radius: 3px;
+        border-radius: 5px;
         margin-top: 15px;
         margin-bottom: 10px; }
       footer .social_wrapper .subscribe button {
@@ -495,11 +529,17 @@ footer {
         justify-content: center;
         color: #fff;
         text-transform: uppercase;
-        font-weight: 700; }
+        font-weight: 700;
+        cursor: pointer;
+        transition: .2s ease-out; }
+        footer .social_wrapper .subscribe button:hover {
+          background-color: #ffa148;
+          transition: .2s ease-out; }
     footer .social_wrapper .social_link {
       background-color: #343434;
-      width: 200px;
-      padding: 18px 0 50px 5px; }
+      padding: 18px 30px 50px 5px;
+      margin-top: 4px;
+      height: 100%; }
       footer .social_wrapper .social_link h4 {
         color: #fff;
         font-size: 14px;
@@ -507,16 +547,9 @@ footer {
       footer .social_wrapper .social_link .links {
         margin-top: 20px;
         display: flex; }
-        footer .social_wrapper .social_link .links .facebook {
-          background-color: #3e5a9b; }
-        footer .social_wrapper .social_link .links .twiter {
-          background-color: #2daae0; }
-        footer .social_wrapper .social_link .links .pinterest {
-          background-color: #cb2028; }
         footer .social_wrapper .social_link .links a {
           color: #fff;
           text-decoration: none;
-          padding: 5px 10px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -524,6 +557,9 @@ footer {
           footer .social_wrapper .social_link .links a i {
             margin: 0;
             font-size: 20px; }
+          footer .social_wrapper .social_link .links a img {
+            width: 30px;
+            height: 30px; }
 
 @media (max-width: 992px) {
   .top_header .container .header_links {
@@ -547,12 +583,199 @@ footer {
   #best_selling .products_store .item .add_item {
     flex-direction: column; } }
 @media (max-width: 768px) {
+  footer .social_wrapper {
+    flex-direction: column;
+    align-items: center; }
+
+  #auto_list .tabs .tabs_caption li {
+    width: 120px; }
+  #auto_list .tabs .tabs_content span {
+    font-size: 14px; }
+
+  #banner .container .main_title {
+    padding: 75px; }
+
+  #about:after {
+    display: none; }
+  #about .text_wrapper {
+    width: 100%; }
+    #about .text_wrapper h2 {
+      text-align: center; }
+      #about .text_wrapper h2:after {
+        width: 50%;
+        left: 25%; }
+
+  header {
+    position: relative; }
+    header .top_header {
+      position: relative;
+      z-index: 6;
+      overflow: hidden; }
+      header .top_header .container .header_logo {
+        flex-direction: column; }
+        header .top_header .container .header_logo a {
+          margin-right: 0; }
+          header .top_header .container .header_logo a:after {
+            display: none; }
+    header .menu {
+      position: absolute;
+      width: 100%;
+      z-index: 5;
+      overflow: hidden;
+      transform: translateY(-85%);
+      transition: .2s ease-out;
+      padding: 20px 0 50px 0; }
+      header .menu .nav_menu {
+        flex-direction: column;
+        align-items: center; }
+        header .menu .nav_menu li {
+          width: 100%;
+          text-align: center;
+          margin-top: 20px; }
+          header .menu .nav_menu li a {
+            text-decoration: none; }
+      header .menu .burger {
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        bottom: 15px;
+        right: 30px;
+        cursor: pointer;
+        outline: none;
+        z-index: 3; }
+        header .menu .burger span {
+          background-color: #f28724;
+          width: 100%;
+          height: 2px;
+          display: block;
+          left: 0;
+          bottom: 5px;
+          transform-origin: right;
+          top: 12px;
+          position: absolute;
+          transform: translateY(5px); }
+          header .menu .burger span:after, header .menu .burger span:before {
+            content: '';
+            display: block;
+            background-color: #f28724;
+            width: 100%;
+            height: 2px;
+            position: absolute; }
+          header .menu .burger span:after {
+            top: -5px;
+            transform-origin: right; }
+          header .menu .burger span:before {
+            bottom: -5px; }
+    header .menu_active {
+      transform: translateY(0);
+      transition: .2s ease-out; }
+      header .menu_active .burger {
+        top: 20px; }
+        header .menu_active .burger span {
+          transform: translateY(5px) rotate(45deg); }
+          header .menu_active .burger span:before {
+            transform: rotate(90deg) translate(-5px, 0px); }
+          header .menu_active .burger span:after {
+            opacity: 0; }
+
+  #find_light .container .search_light h3 {
+    text-align: center; }
+  #find_light .container .search-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    #find_light .container .search-wrapper .selectric-wrapper {
+      margin-bottom: 10px;
+      width: 50%; }
+      #find_light .container .search-wrapper .selectric-wrapper .selectric {
+        width: 100%; }
+  #find_light .container .shop_by {
+    flex-wrap: wrap; }
+    #find_light .container .shop_by div {
+      width: 100%; }
+
   #best_selling .products_store {
     justify-content: space-evenly; }
     #best_selling .products_store .item {
       width: 40%; }
       #best_selling .products_store .item .add_item {
         flex-direction: row; } }
+@media (max-width: 580px) {
+  #banner .main_title h1 {
+    font-size: 45px;
+    line-height: 45px; }
+
+  header .top_header .container .phone_number {
+    display: none; }
+
+  #best_selling .products_store {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #best_selling .products_store .item {
+      width: 70%; }
+      #best_selling .products_store .item .add_item {
+        flex-direction: column;
+        align-items: center; }
+
+  #world_leading .logo a {
+    width: 30%; } }
+@media (max-width: 480px) {
+  footer .footer_logo {
+    flex-direction: column; }
+
+  header .top_header .container {
+    flex-direction: column; }
+    header .top_header .container .header_links {
+      flex-direction: row;
+      margin-top: 20px; }
+    header .top_header .container .account {
+      text-align: center; }
+      header .top_header .container .account .cart {
+        padding: 5px 10px; }
+
+  #banner .container .main_title h1 {
+    font-size: 32px;
+    line-height: 26px; }
+  #banner .container .main_title p {
+    font-size: 22px; }
+  #banner .container .main_title a {
+    font-size: 14px;
+    margin-top: 25px; }
+
+  #find_light .benefits {
+    flex-direction: column;
+    align-items: center; }
+    #find_light .benefits span {
+      font-size: 11px; }
+
+  #world_leading .container .logo a {
+    width: 46%; }
+
+  #auto_list .container .tabs .tabs_caption li {
+    width: 80px;
+    font-size: 14px; }
+  #auto_list .container .tabs .tabs_content a {
+    width: 22%;
+    font-size: 9px; } }
+@media (max-width: 380px) {
+  footer .footer_logo {
+    text-align: center; }
+    footer .footer_logo div {
+      flex-direction: column; }
+  footer .social_wrapper .subscribe {
+    width: 95%;
+    padding: 10px 5px; }
+  footer .social_wrapper .social_link {
+    margin-top: 4px;
+    height: 100%;
+    width: 85%; }
+
+  #world_leading .container .logo {
+    justify-content: center; }
+    #world_leading .container .logo a {
+      width: 75%; } }
 * {
   margin: 0;
   padding: 0;

@@ -5,14 +5,17 @@
   border-bottom: 1px solid #e4e4e4;
   h2 {
     color: #000;
+    letter-spacing: 1px;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
   }
   span {
+    letter-spacing: 1px;
     color: #898989;
     text-transform: uppercase;
     font-size: 13px;
+    font-weight: 300;
   }
   .products_store {
     margin-top: 45px;
@@ -26,7 +29,7 @@
       justify-content: space-between;
       text-align: left;
       margin-bottom: 42px;
-      width: 23%;
+      width: 24%;
       cursor: pointer;
       .photo {
         width: 100%;
@@ -54,10 +57,12 @@
       }
       .add_item {
         display: flex;
+        align-items: center;
         button {
           text-transform: uppercase;
           text-decoration: none;
           color: #fff;
+          font-weight: 700;
           padding: 10px;
           border: 1px solid #d37117;
           background-color: $col_orange;

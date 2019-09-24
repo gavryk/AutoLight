@@ -13,8 +13,13 @@ $(function() {
     });
 
     $(function() {
+        $('.burger').on('click', function() {
+            $('.menu').toggleClass('menu_active');
+        })
+    });
+
+    $(function() {
         $('select').selectric();
-        minHeight: 320;
     });
 
     $(".tabs_caption").on("click", "li", function() {
