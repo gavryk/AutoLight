@@ -1,0 +1,32 @@
+#post_footer {
+  font-family: PTSans, sans-serif;
+  padding: 45px 0;
+  background-color: #292724;
+  .post-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 400;
+      word-spacing: 5px;
+      a {
+        margin-left: 5px;
+        color: $col_orange;
+      }
+    }
+    .social_link {
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 10px;
+      }
+      a {
+        img {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

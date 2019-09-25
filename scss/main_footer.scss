@@ -1,4 +1,4 @@
-footer {
+#main_footer {
   background-color: #f6f6f6;
   padding: 87px 0 64px 0;
   .footer_logo {
@@ -79,22 +79,6 @@ footer {
       .links {
         margin-top: 20px;
         display: flex;
-        a {
-          color: #fff;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-right: 10px;
-          i {
-            margin: 0;
-            font-size: 20px;
-          }
-          img {
-            width: 30px;
-            height: 30px;
-          }
-        }
       }
     }
   }
