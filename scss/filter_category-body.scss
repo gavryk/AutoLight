@@ -1,0 +1,31 @@
+#filter_category-body {
+  padding: 35px 0 85px 0;
+  .anchor_links {
+    display: flex;
+    margin-bottom: 30px;
+    a {
+      color: #8e8e8e;
+      position: relative;
+      margin-right: 23px;
+      text-decoration: none;
+      text-transform: capitalize;
+      &:after {
+        content: '>';
+        position: absolute;
+        right: -12px;
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      &:hover {
+        color: $col_orange;
+        text-decoration: underline;
+      }
+    }
+  }
+  .posts {
+    padding: 0;
+  }
+}

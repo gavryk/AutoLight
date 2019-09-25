@@ -340,7 +340,7 @@
   }
 }
 @media (max-width: 480px) {
-  #posts {
+  #posts, #filter_category-body {
     .post-container {
       .posts_wrapper {
         .post {
@@ -473,7 +473,7 @@
       }
     }
   }
-  #posts {
+  #posts, #filter_category-body {
     .post-container {
       .posts_wrapper {
         flex-direction: column;
