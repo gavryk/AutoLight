@@ -1,0 +1,53 @@
+#reply_form {
+  padding: 55px 0;
+  border-bottom: 1px solid #ebebeb;
+  h2 {
+    font-family: proxima_nova, sans-serif;
+    color: #656565;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  form {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    color: #939393;
+    label {
+      display: flex;
+      flex-direction: column;
+      width: 47%;
+      font-size: 12px;
+      font-family: PTSans, sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      input {
+        height: 25px;
+      }
+      input, textarea {
+        border: 1px solid #ebebeb;
+        background-color: #f8f8f8;
+        margin: 10px 0 20px 0;
+        padding: 5px;
+      }
+      textarea {
+        resize: vertical;
+        height: 110px;
+      }
+    }
+  }
+  button[type="submit"] {
+    background-color: #f68921;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: .4s ease-out;
+    &:hover {
+      transition: .4s ease-out;
+      box-shadow: 0 0 5px 1px #f68921;
+    }
+  }
+}

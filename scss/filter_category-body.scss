@@ -1,31 +1,33 @@
 #filter_category-body {
-  padding: 35px 0 85px 0;
-  .anchor_links {
-    display: flex;
-    margin-bottom: 30px;
-    a {
-      color: #8e8e8e;
-      position: relative;
-      margin-right: 23px;
-      text-decoration: none;
-      text-transform: capitalize;
-      &:after {
-        content: '>';
-        position: absolute;
-        right: -12px;
-      }
-      &:last-child {
-        &:after {
-          display: none;
-        }
-      }
-      &:hover {
-        color: $col_orange;
-        text-decoration: underline;
-      }
-    }
-  }
+  padding-bottom: 85px;
   .posts {
     padding: 0;
+  }
+}
+.anchor_links {
+  padding-top: 35px;
+  display: flex;
+  margin-bottom: 30px;
+  a {
+    color: $col_orange;
+    position: relative;
+    margin-right: 23px;
+    text-transform: capitalize;
+    &:after {
+      content: '>';
+      position: absolute;
+      right: -12px;
+    }
+    &:last-child {
+      color: #b4b4b4;
+      text-decoration: none;
+      &:after {
+        display: none;
+      }
+    }
+    &:hover {
+      color: #b4b4b4;
+      text-decoration: none;
+    }
   }
 }
