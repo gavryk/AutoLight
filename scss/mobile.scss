@@ -91,8 +91,8 @@
   }
   #banner {
     .container {
-      .main_title {
-        padding: 75px;
+      #main_title {
+        padding: 75px 75px 75px 75px;
       }
     }
   }
@@ -100,15 +100,17 @@
     &:after {
       display: none;
     }
-    .text_wrapper {
-      h2 {
-        text-align: center;
-        &:after {
-          width: 50%;
-          left: 25%;
+    .container {
+      .text_wrapper {
+        h2 {
+          text-align: center;
+          &:after {
+            width: 50%;
+            left: 25%;
+          }
         }
+        width: 100%;
       }
-      width: 100%;
     }
   }
   header {
@@ -237,12 +239,16 @@
     }
   }
   #best_selling {
-    .products_store {
-      justify-content: space-evenly;
-      .item {
-        width: 40%;
-        .add_item {
-          flex-direction: row;
+    .container {
+      .products_store {
+        justify-content: space-evenly;
+
+        .item {
+          width: 40%;
+
+          .add_item {
+            flex-direction: row;
+          }
         }
       }
     }
@@ -333,15 +339,17 @@
     }
   }
   #best_selling {
-    .products_store {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .item {
-        width: 70%;
-        .add_item {
-          flex-direction: column;
-          align-items: center;
+    .container {
+      .products_store {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .item {
+          width: 70%;
+          .add_item {
+            flex-direction: column;
+            align-items: center;
+          }
         }
       }
     }
@@ -355,6 +363,20 @@
   }
 }
 @media (max-width: 480px) {
+  #single-post {
+    .single-post_wrapper {
+      .single-post_title {
+        h2 {
+          font-size: 26px;
+        }
+      }
+      .single-post_description {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
   #posts, #filter_category-body, #other_categories {
     .post-container {
       .posts_wrapper {
@@ -461,6 +483,26 @@
   }
 }
 @media (max-width: 380px) {
+  #single-post {
+    .single-post_wrapper {
+      .single-post_description {
+        padding: 30px 40px 0 40px;
+      }
+      .single-post_title {
+        h2 {
+          padding: 0 40px 0 40px;
+        }
+      }
+      .links_share {
+        padding: 0 50px 0 50px;
+      }
+      .single-post_description {
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
   .post-container, .posts {
     .pagination {
       a {

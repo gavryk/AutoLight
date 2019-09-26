@@ -90,16 +90,16 @@
   #auto_list .tabs .tabs_content span {
     font-size: 14px; }
 
-  #banner .container .main_title {
-    padding: 75px; }
+  #banner .container #main_title {
+    padding: 75px 75px 75px 75px; }
 
   #about:after {
     display: none; }
-  #about .text_wrapper {
+  #about .container .text_wrapper {
     width: 100%; }
-    #about .text_wrapper h2 {
+    #about .container .text_wrapper h2 {
       text-align: center; }
-      #about .text_wrapper h2:after {
+      #about .container .text_wrapper h2:after {
         width: 50%;
         left: 25%; }
 
@@ -193,11 +193,11 @@
     #find_light .container .shop_by div {
       width: 100%; }
 
-  #best_selling .products_store {
+  #best_selling .container .products_store {
     justify-content: space-evenly; }
-    #best_selling .products_store .item {
+    #best_selling .container .products_store .item {
       width: 40%; }
-      #best_selling .products_store .item .add_item {
+      #best_selling .container .products_store .item .add_item {
         flex-direction: row; } }
 @media (max-width: 680px) {
   header .post_header .post-container .search-panel {
@@ -239,19 +239,24 @@
   header .top_header .container .phone_number {
     display: none; }
 
-  #best_selling .products_store {
+  #best_selling .container .products_store {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    #best_selling .products_store .item {
+    #best_selling .container .products_store .item {
       width: 70%; }
-      #best_selling .products_store .item .add_item {
+      #best_selling .container .products_store .item .add_item {
         flex-direction: column;
         align-items: center; }
 
   #world_leading .logo a {
     width: 30%; } }
 @media (max-width: 480px) {
+  #single-post .single-post_wrapper .single-post_title h2 {
+    font-size: 26px; }
+  #single-post .single-post_wrapper .single-post_description p {
+    font-size: 14px; }
+
   #posts .post-container .posts_wrapper .post, #filter_category-body .post-container .posts_wrapper .post, #other_categories .post-container .posts_wrapper .post {
     width: 48%; }
 
@@ -303,6 +308,15 @@
     width: 22%;
     font-size: 9px; } }
 @media (max-width: 380px) {
+  #single-post .single-post_wrapper .single-post_description {
+    padding: 30px 40px 0 40px; }
+  #single-post .single-post_wrapper .single-post_title h2 {
+    padding: 0 40px 0 40px; }
+  #single-post .single-post_wrapper .links_share {
+    padding: 0 50px 0 50px; }
+  #single-post .single-post_wrapper .single-post_description p {
+    font-size: 11px; }
+
   .post-container .pagination a, .posts .pagination a {
     font-size: 11px; }
   .post-container .pagination .pagination_previous, .posts .pagination .pagination_previous {
@@ -610,7 +624,7 @@
       justify-content: space-between;
       text-align: left;
       margin-bottom: 42px;
-      width: 24%;
+      width: 23%;
       cursor: pointer; }
       #best_selling .products_store .item .photo {
         width: 100%;
@@ -658,7 +672,7 @@
           #best_selling .products_store .item .add_item b span {
             color: #fb9292;
             text-decoration: line-through;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             margin-left: 6px; }
 
@@ -1222,7 +1236,6 @@
     padding: 15px 100px 0 100px;
     display: flex; }
     .single-post_wrapper .links_share a {
-      width: 35px;
       height: 35px;
       margin-right: 53px;
       display: inline-flex;
@@ -1349,6 +1362,8 @@
         height: 110px; }
   #reply_form button[type="submit"] {
     background-color: #f68921;
+    font-family: PTSans, sans-serif;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     border: none;
@@ -1441,6 +1456,8 @@ body {
     color: #000; }
   .pagination .pagination_previous, .pagination .pagination_next {
     position: relative; }
+    .pagination .pagination_previous:hover, .pagination .pagination_next:hover {
+      text-decoration: none; }
   .pagination .pagination_previous {
     margin: 0 17px 0 30px; }
     .pagination .pagination_previous:before {

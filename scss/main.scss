@@ -127,6 +127,9 @@ body {
   }
   .pagination_previous, .pagination_next {
     position: relative;
+    &:hover {
+      text-decoration: none;
+    }
   }
   .pagination_previous {
     margin: 0 17px 0 30px;
