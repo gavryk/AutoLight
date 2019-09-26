@@ -3,6 +3,9 @@
   .posts {
     padding: 0;
   }
+  .category_title {
+    font-size: 34px;
+  }
 }
 .anchor_links {
   padding-top: 35px;
@@ -13,6 +16,7 @@
     position: relative;
     margin-right: 23px;
     text-transform: capitalize;
+    font-size: 12px;
     &:after {
       content: '>';
       position: absolute;
