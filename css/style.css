@@ -1457,7 +1457,9 @@ body {
   .pagination .pagination_previous, .pagination .pagination_next {
     position: relative; }
     .pagination .pagination_previous:hover, .pagination .pagination_next:hover {
-      text-decoration: none; }
+      text-decoration: underline; }
+      .pagination .pagination_previous:hover:before, .pagination .pagination_previous:hover:after, .pagination .pagination_next:hover:before, .pagination .pagination_next:hover:after {
+        text-decoration: none; }
   .pagination .pagination_previous {
     margin: 0 17px 0 30px; }
     .pagination .pagination_previous:before {
