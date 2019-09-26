@@ -13,6 +13,7 @@
     margin-top: 44px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: #939393;
     label {
       display: flex;
@@ -36,20 +37,20 @@
         height: 110px;
       }
     }
-  }
-  button[type="submit"] {
-    background-color: #f68921;
-    font-family: PTSans, sans-serif;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    padding: 15px 25px;
-    cursor: pointer;
-    transition: .4s ease-out;
-    &:hover {
+    button[type="submit"] {
+      background-color: #f68921;
+      font-family: PTSans, sans-serif;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      border: none;
+      padding: 15px 25px;
+      cursor: pointer;
       transition: .4s ease-out;
-      box-shadow: 0 0 5px 1px #f68921;
+      &:hover {
+        transition: .4s ease-out;
+        box-shadow: 0 0 5px 1px #f68921;
+      }
     }
   }
 }

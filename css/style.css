@@ -407,32 +407,29 @@
       display: flex;
       align-items: center;
       border-radius: 3px;
-      transition: .2s ease-out; }
-      .top_header .container .cart a {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        color: #ffa148;
-        font-weight: bold;
-        text-decoration: none;
-        font-family: texta, sans-serif;
-        position: relative; }
-        .top_header .container .cart a img {
-          margin-right: 17px; }
-        .top_header .container .cart a:after {
-          content: '';
-          position: absolute;
-          top: 3px;
-          right: -20px;
-          height: 11px;
-          width: 1px;
-          background-color: #ffa148; }
+      transition: .2s ease-out;
+      font-size: 14px;
+      color: #ffa148;
+      font-weight: 700;
+      text-decoration: none;
+      font-family: texta, sans-serif;
+      position: relative; }
+      .top_header .container .cart img {
+        margin-right: 17px; }
+      .top_header .container .cart:after {
+        content: '';
+        position: absolute;
+        top: 13px;
+        right: 45px;
+        height: 11px;
+        width: 1px;
+        background-color: #ffa148; }
       .top_header .container .cart span {
         color: #ffa148;
         margin-left: 41px; }
-    .top_header .container .cart_hover {
-      box-shadow: 0 0 5px 2px #f28724;
-      transition: .2s ease-out; }
+      .top_header .container .cart:hover {
+        box-shadow: 0 0 5px 2px #f28724;
+        transition: .2s ease-out; }
 
 .menu {
   background-color: #fff;
@@ -1240,7 +1237,7 @@
     display: flex; }
     .single-post_wrapper .links_share a {
       height: 35px;
-      margin-right: 53px;
+      margin-right: 16px;
       display: inline-flex;
       align-items: center;
       font-weight: 400;
@@ -1344,6 +1341,7 @@
     margin-top: 44px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: #939393; }
     #reply_form form label {
       display: flex;
@@ -1363,19 +1361,19 @@
       #reply_form form label textarea {
         resize: vertical;
         height: 110px; }
-  #reply_form button[type="submit"] {
-    background-color: #f68921;
-    font-family: PTSans, sans-serif;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    padding: 15px 25px;
-    cursor: pointer;
-    transition: .4s ease-out; }
-    #reply_form button[type="submit"]:hover {
-      transition: .4s ease-out;
-      box-shadow: 0 0 5px 1px #f68921; }
+    #reply_form form button[type="submit"] {
+      background-color: #f68921;
+      font-family: PTSans, sans-serif;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      border: none;
+      padding: 15px 25px;
+      cursor: pointer;
+      transition: .4s ease-out; }
+      #reply_form form button[type="submit"]:hover {
+        transition: .4s ease-out;
+        box-shadow: 0 0 5px 1px #f68921; }
 
 #other_categories .post-container h2 {
   font-size: 34px;
