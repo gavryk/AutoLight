@@ -115,14 +115,23 @@
             }
           }
         }
-        &:after {
+        &:after,
+        &:before {
           content: '';
           position: absolute;
-          top: -5px;
-          left: 45%;
           width: 0;
           height: 0;
           border-style: solid;
+        }
+        &:before {
+          top: -6px;
+          left: 116px;
+          border-width: 0 6px 6px 6px;
+          border-color: transparent transparent #e1e1e1 transparent;
+        }
+        &:after {
+          top: -5px;
+          left: 45%;
           border-width: 0 5px 5px 5px;
           border-color: transparent transparent #fff transparent;
         }
