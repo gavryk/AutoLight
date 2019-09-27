@@ -274,6 +274,17 @@
       }
     }
   }
+  #auto_list {
+    .container {
+      .tabs {
+        .tabs_caption {
+          li {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
   #posts_banner {
     .post-container {
       .swiper-wrapper {

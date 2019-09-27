@@ -208,6 +208,9 @@
   header .post_menu .rss {
     display: none; }
 
+  #auto_list .container .tabs .tabs_caption li {
+    width: 170px; }
+
   #posts_banner .post-container .swiper-wrapper .swiper-slide .post-slide_title {
     padding: 50px 0 80px 50px;
     width: 80%; }
