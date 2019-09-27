@@ -74,5 +74,12 @@
   url('../fonts/OpenSans/opensans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSansItalic/ptsans-italic.woff2') format('woff2'),
+  url('../fonts/PTSansItalic/ptsans-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
 
 }

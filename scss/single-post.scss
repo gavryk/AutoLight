@@ -16,8 +16,15 @@
   }
   .single-post_image {
     margin: 57px 0 20px 0;
+    text-align: center;
     img {
       width: 100%;
+    }
+    span {
+      font-size: 12px;
+      color: #8d8d8d;
+      font-family: PTSans, sans-serif;
+      font-style: italic;
     }
   }
   .single-post_description {
