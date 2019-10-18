@@ -14,6 +14,7 @@ $(function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        loop: true
     });
 
     $(function() {
